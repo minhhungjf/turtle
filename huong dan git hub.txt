@@ -1,6 +1,8 @@
 *************************************************************
 *                      HƯỚNG DẪN GIT HUB                    *
 *************************************************************
+Ứng dụng: https://github.com
+Phần mềm: https://git-scm.com
 
 $git clone duong_dan_kho
    // Nhân bản kho về localhost hya download dữ liệu từ kho về máy tính
@@ -55,4 +57,4 @@ $git pull
          	git config --global user.name "Your Name Tên đăng nhập"
         Sau đó commit lại
 
-
+- Xóa file trên local thi chạy lệnh $git commit -a -m"comment ghi chú" để cập nhật sau đó push lên kho online
