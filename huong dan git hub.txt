@@ -1,0 +1,58 @@
+*************************************************************
+*                      HƯỚNG DẪN GIT HUB                    *
+*************************************************************
+
+$git clone duong_dan_kho
+   // Nhân bản kho về localhost hya download dữ liệu từ kho về máy tính
+
+$git status
+   // Kiểm tra trạng thái của file vd: file mới tạo chưa dc theo dõi...
+
+$git add ten_file hoặc git add *
+   // Cho git theo dõi các file mới
+
+$git commit -m"comment ghi chú"
+   // Lưu trữ file vào kho chứa local
+
+$git push
+   // Đồng bộ file lên kho github online
+
+$git commit -a -m"comment ghi chú"
+   // Chạy lệnh này khi trong local có file thay đổi nội dung bên trong. Để lưu kho local
+   // Gồm 2 lệnh: vừa theo dõi(cập nhật thay đổi mới) và lưu vào kho local
+   // Tương đương chay 2 lệnh git add và git commit
+
+$git log
+   // Xem lịch sử để lấy ID các lần commit nội dung
+   // Ctrl + C để thoát ra lệnh log
+
+$git revert ID_commit
+   // Lấy lại bản backup trước đó theo ID_commit
+   // ESC ->  Shift + : ->q + Enter
+   // lưu ý Mở Git bash Hear ngay vị trí file thay đổi
+
+$git pull
+  // Đồng bộ hóa kho online về kho local
+
+********  NOTE *********
+- Nếu thư mục rỗng thì phải thêm file .gitkeep thì git status mới nhận dạng được
+- Lỗi 1
+	+ Chạy lệnh commit báo lỗi sau
+
+		*** Please tell me who you are.
+
+		Run
+
+  		git config --global user.email "you@example.com"
+ 	 	git config --global user.name "Your Name"
+
+		to set your account's default identity.
+		Omit --global to set the identity only in this repository.
+
+		fatal: unable to auto-detect email address (got 'Admin@User-PC.(none)')
+ 	+ Thì cần set danh tính tài khoản  bằng cách chạy lệnh
+          	git config --global user.email "you@example.com Email của tài khoản"
+         	git config --global user.name "Your Name Tên đăng nhập"
+        Sau đó commit lại
+
+
